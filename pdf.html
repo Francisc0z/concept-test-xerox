@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        .miniTable{
+            width: 100%;
+            text-align: center;
+        }
+   
+        .gridContainer{
+            display: flex;
+        }
+        .gridStart{
+            width: 66%;
+            padding: 2rem;
+        }
+        .gridEnd{
+            width: 33%;
+        }
+        .generalTable{
+            padding: 1rem;
+        }
+        .generalTable table{
+            width: 100%;
+
+        }
+        .title{
+            border: solid #77A988 4px;
+        }
+        .title h1{
+            margin-left: 4rem;
+            color: #13692F;
+            text-transform: uppercase;
+        }
+        .genericalTable{
+            padding-top: 2rem;
+            width: 100%;
+        }
+        .genericalTable th{
+            color: #13692F;
+        }
+        .firstTh{
+            border-left:13px #13692F solid;
+
+        }
+        .genericalTable td{
+            border-left: 3px #E9EFEB solid;
+            border-right: 3px #E9EFEB solid;
+            border-bottom: 3px #E9EFEB solid;
+        }
+        .genericalTable thead tr{
+            background-color: #EEF4F0;
+        }
+
+        .rotatedTable {
+            transform: rotate(-90deg);
+        }
+        .border {
+            border: solid red 1px;
+        }
+        .header{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header div p{
+            margin: 0;
+            margin-right: 10px;
+            color: #13692F;
+
+        }
+        .header p:first-of-type {
+            font-size: large;
+            font-weight: bold;
+        }
+        .logo{
+            border: solid red 1px;
+            width: 150px;
+            height: 150px;
+        } 
+    </style>
+</head>
+<body>
+
+    <div class="border">
+        <div class="header">
+            <div>
+                <p>HDI SEGUROS S.A.</p>
+                <p>Tte. Gral. Juan D. Peron 650 5° piso</p>
+                <p>(C1038AAN) Buenos Aires, Argentina</p>
+                <p>N° Inscripcion IGI: 12.533 | 10.05.1961</p>
+                <p>WWW.HDI.COM.AR</p>
+            </div>
+            <div class="logo">
+                <img src="logo" alt="">
+            </div>
+        </div>
+        <div class="gridContainer">
+        <div class="gridStart">
+            <div class="title">
+                <h1>
+                    Seguro de Incendio
+                </h1>
+            </div>
+            <div>
+                <table class="table genericalTable">
+                    <thead>
+                        <tr>
+                            <th class="firstTh">ASEGURADO O TOMADOR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <p>BR CONSTRUCCIONES SRL</p> 
+                                <p>CALCHINES 1188</p> 
+                                <div>
+                                    <p>SANTA FE              (C.P. 3000)</p>
+                                </div>
+                                <div>
+                                    <p>CUIT 30714436348          1/0001=67709/000</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    "El asegurador" y quien mas arriba se designa con el nombre de "Asegurado" convienen en celebrar el presente contrato de seguro de acuerdo con las condiciones Generales y particulares que se anexan e integran a esta poliza.
+                </p>
+            </div>
+        </div>
+        <div class="gridEnd">
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">POLIZA EMITIDA POR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">POLIZA N°</th>
+                        <th>SUPLEMENTO N°</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>128.310</td>
+                        <td>000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="genericalTable">
+                <thead style="width: 100%">
+                    <tr>
+                        <th class="firstTh" colspan="2">VIGENCIA</th>
+                    </tr>
+                    <tr>
+                        <th>DESDE LAS 12 DEL</th>
+                        <th>HASTA LAS 12 DEL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06/10/2023</td>
+                        <td>06/04/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">LUGAR Y FECHA DE EMISION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> BUENOS AIRES, 06/04/2023 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div class="generalTable">
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">Encabezado</th>
+                        <th>Encabezado</th>
+                        <th>Encabezado</th>
+                        <th>Encabezado</th>
+                        <th>Encabezado</th>
+                        <th>Encabezado</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+        <div class="generalTable">
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">Encabezado 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="generalTable">
+            <table class="genericalTable">
+                <thead>
+                    <tr>
+                        <th class="firstTh">Encabezado 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div >
+        <table>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                </tr>
+                <tr>
+                    <th>Encabezado 1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1, fila 1</td>
+                    <td>Dato 2, fila 1</td>
+                </tr>
+                <tr>
+                    <td>Dato 1, fila 2</td>
+                    <td>Dato 2, fila 2</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                </tr>
+                <tr>
+                    <th>Encabezado 1</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+</body>
+</html>
